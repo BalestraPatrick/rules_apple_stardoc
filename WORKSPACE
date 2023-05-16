@@ -2,8 +2,8 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "build_bazel_rules_apple",
-    strip_prefix = "rules_apple-03fd977db621b606fff1bb92a2dc18810f6cb2cf",
-    url = "https://github.com/BalestraPatrick/rules_apple/archive/03fd977db621b606fff1bb92a2dc18810f6cb2cf.tar.gz",
+    strip_prefix = "rules_apple-12291c642c3fd8d764400a98f35efe15de9d2800",
+    url = "https://github.com/BalestraPatrick/rules_apple/archive/12291c642c3fd8d764400a98f35efe15de9d2800.tar.gz",
 )
 
 load(
