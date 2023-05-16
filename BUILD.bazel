@@ -1,0 +1,12 @@
+load("@io_bazel_stardoc//stardoc:stardoc.bzl", "stardoc")
+
+stardoc(
+    name = "test",
+    out = "test.md",
+    input = "//:test.bzl",
+    tags = [
+        "no-cache",
+        "no-sandbox",  # https://github.com/bazelbuild/stardoc/issues/112
+    ],
+    deps = ["@build_bazel_rules_apple//apple:apple_binary"],
+)
